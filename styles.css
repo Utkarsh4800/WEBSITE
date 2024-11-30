@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+/* "Designed by" Text */
+.designer-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-right: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.designer-text:hover {
+    color: #f39c12;
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #222;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+/* Venue Section */
+.venue-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+}
+
+.venue-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Map and details container */
+.venue-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.venue-map {
+    flex: 1;
+}
+
+.venue-details {
+    flex: 1;
+    text-align: left;
+}
+
+.venue-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 250px; /* Ensures sections don't shrink too much on smaller screens */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin: 0;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 15px 5px;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 12px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+}
+/* Sponsors Section */
+.sponsors-section {
+    padding: 3rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.sponsors-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.sponsors-subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.sponsor-item {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sponsor-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sponsor-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sponsors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+/* Image Gallery Section */
+.image-gallery-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.gallery-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 1 calc(20% - 1rem);
+    max-width: 20%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 1rem);
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.event-schedule {
+    text-align: center;
+    padding: 20px;
+}
+
+.event-schedule h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.event-schedule p {
+    font-size: 18px;
+    color: #666;
+}
+
+.date-selector {
+    margin: 20px 0;
+}
+
+.date-selector button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.date-selector button:hover {
+    background-color: #f0f0f0;
+}
+
+.schedule {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.time-slot {
+    margin-bottom: 20px;
+}
+
+.time-slot h2 {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    margin: 0;
+}
+
+.event {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.event h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.event p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+/* Highlights Section */
+.highlight-section {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* Background Overlay Section */
+.highlight-overlay {
+    position: relative;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 70vh; /* Adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.highlight-text {
+    position: relative;
+    z-index: 2;
+}
+
+.highlight-text h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.highlight-text p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+/* Content Section */
+.highlight-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: #111;
+}
+
+.highlight-details {
+    flex: 2;
+    padding-right: 20px;
+    line-height: 1.6;
+}
+
+.highlight-details h2 {
+    font-size: 2.8rem;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.highlight-details p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #ddd;
+}
+
+.highlight-details .team-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.highlight-details .prize-info {
+    font-weight: bold;
+    color: #f4c542;
+}
+
+/* Sponsor Section */
+.highlight-sponsors {
+    flex: 1;
+    background-color: #00FF00; /* Exact green color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight-sponsors img {
+    height: 50px;
+    max-width: 80px; /* Ensures logos don't exceed a specific size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .highlight-content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .highlight-details {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .highlight-sponsors {
+        gap: 15px;
+    }
+
+    .highlight-sponsors img {
+        height: 40px;
+        max-width: 60px;
+    }
+
+    .highlight-overlay h1 {
+        font-size: 2.5rem;
+    }
+}
+/* Homepage Header */
+.homepage-header {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Image */
+.homepage-bg {
+    background: url('background-event.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.homepage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Branding Section */
+.event-branding {
+    margin-bottom: 20px;
+}
+
+.nexus-logo,
+.genesis-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.event-branding p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Event Details Section */
+.event-details h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.event-details h2 {
+    font-size: 3rem;
+    font-family: 'Cursive', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #f4c542;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-details h1 {
+        font-size: 2rem;
+    }
+
+    .event-details p {
+        font-size: 1.2rem;
+    }
+
+    .event-details h2 {
+        font-size: 2.5rem;
+    }
+
+    .nexus-logo,
+    .genesis-logo {
+        max-width: 150px;
+    }
+}
+/* Fix for Header Elements (Bring Forward) */
+.homepage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10; /* Ensure this is higher than background */
+}
+
+.homepage-bg {
+    position: relative;
+    z-index: 1; /* Set background to a lower z-index */
+}
+
+/* Event Branding Section */
+.event-branding,
+.event-details {
+    position: relative;
+    z-index: 20; /* Bring the text/logos forward */
+}
+
+/* Responsive Design (Mobile Fix) */
+@media (max-width: 768px) {
+    .homepage-overlay {
+        z-index: 10; /* Ensure proper layering */
+    }
+
+    .event-branding,
+    .event-details {
+        z-index: 20; /* Ensure elements stay forward on mobile */
+    }
+}
