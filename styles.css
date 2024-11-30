@@ -709,3 +709,200 @@ header nav ul li a {
         z-index: 20; /* Ensure elements stay forward on mobile */
     }
 }
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Image */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.logo span {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    padding: 5px 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f90;
+}
+
+.engineered-by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.engineered-by img {
+    height: 30px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('background.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section .nexus-logo,
+.hero-section .genesis-logo {
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.hero-section h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.hero-section h4 {
+    font-size: 30px;
+    font-family: 'Cursive';
+    color: #f90;
+    margin-top: 15px;
+}
+
+
+.star-night-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dj-section {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.dj-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.dj-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.dj-section p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
