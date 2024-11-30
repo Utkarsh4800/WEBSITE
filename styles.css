@@ -6,8 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #111;
+    color: #17183B; /* Primary dark color for text */
+    background-color: #d1d5de; /* Light background color */
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -16,7 +17,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background: #1D7874; /* Accent color */
+    color: #F0EC57; /* Highlight color for text */
+    z-index: 1000;
     position: relative;
     flex-wrap: wrap;
 }
@@ -24,13 +27,13 @@ header {
 /* "Designed by" Text */
 .designer-text {
     font-size: 1rem;
-    color: #fff;
+    color: #d1d5de;
     margin-right: 1rem;
     transition: color 0.3s ease-in-out;
 }
 
 .designer-text:hover {
-    color: #f39c12;
+    color: #F0EC57;
 }
 
 /* Navigation Menu */
@@ -47,13 +50,13 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #d1d5de;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #f39c12;
+    color: #F0EC57;
 }
 
 /* Logo */
@@ -98,7 +101,7 @@ nav ul li a:hover {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: #222;
+        background-color: #1D7874;
         padding: 1rem;
     }
 
@@ -112,14 +115,15 @@ nav ul li a:hover {
 .venue-section {
     padding: 2rem;
     text-align: center;
-    background-color: #fff;
-    color: #111;
+    background-color: #d1d5de;
+    color: #17183B;
 }
 
 .venue-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
+    color: #1D7874; /* Accent text */
 }
 
 /* Map and details container */
@@ -146,8 +150,8 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #17183B; /* Dark footer background */
+    color: #d1d5de; /* Highlight footer text */
     padding: 20px 10px;
 }
 
@@ -168,14 +172,14 @@ footer {
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #ffd700;
+    color: #F0EC57; /* Highlight color */
 }
 
 .footer-section p,
 .footer-section ul {
     font-size: 14px;
     margin: 0;
-    color: #ccc;
+    color: #d1d5de;
 }
 
 .footer-section ul {
@@ -199,7 +203,7 @@ footer {
 .footer-bottom {
     text-align: center;
     font-size: 14px;
-    color: #bbb;
+    color: #d1d5de;
     margin-top: 20px;
 }
 
@@ -237,8 +241,9 @@ footer {
 /* Sponsors Section */
 .sponsors-section {
     padding: 3rem 2rem;
-    background-color: #f8f9fa;
+    background-color: #d1d5de; /* Accent background */
     text-align: center;
+    color: #F0EC57; /* Highlight text */
 }
 
 .sponsors-title {
@@ -246,11 +251,12 @@ footer {
     font-weight: bold;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    color: #F0EC57; /* Bright highlight */
 }
 
 .sponsors-subtitle {
     font-size: 1.25rem;
-    color: #666;
+    color: #17183B;
     margin-bottom: 2rem;
 }
 
@@ -264,9 +270,9 @@ footer {
 }
 
 .sponsor-item {
-    background: #fff;
+    background: #d1d5de;
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid #d1d5de;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -291,7 +297,7 @@ footer {
 /* Image Gallery Section */
 .image-gallery-section {
     padding: 4rem 2rem;
-    background-color: #ffffff;
+    background-color: #d1d5de;
     text-align: center;
 }
 
@@ -304,7 +310,7 @@ footer {
 
 .gallery-subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: #17183B;
     margin-bottom: 2.5rem;
 }
 
@@ -326,7 +332,8 @@ footer {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(23, 24, 59, 0.5); /* Subtle shadow */
+    border: 2px solid #1D7874; /* Accent border */
     transition: transform 0.3s ease;
 }
 
@@ -359,7 +366,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #17183B;
 }
 
 header {
@@ -367,8 +374,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ccc;
+    background-color: #d1d5de;
+    border-bottom: 1px solid #d1d5de;
 }
 
 header .logo img {
@@ -388,7 +395,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #17183B;
 }
 
 .event-schedule {
@@ -403,7 +410,7 @@ header nav ul li a {
 
 .event-schedule p {
     font-size: 18px;
-    color: #666;
+    color: #17183B;
 }
 
 .date-selector {
@@ -413,13 +420,15 @@ header nav ul li a {
 .date-selector button {
     margin: 0 10px;
     padding: 10px 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #1D7874; /* Accent background */
+    border: 1px solid #17183B; /* Contrast border */
+    color: #F0EC57; /* Bright text */
     cursor: pointer;
 }
 
 .date-selector button:hover {
-    background-color: #f0f0f0;
+    background-color: #17183B; /* Invert background on hover */
+    color: #d1d5de; /* Light text */
 }
 
 .schedule {
@@ -433,27 +442,28 @@ header nav ul li a {
 }
 
 .time-slot h2 {
-    background-color: #e9e9e9;
+    background-color: #d1d5de;
     padding: 10px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #1D7874;
     margin: 0;
+    color: #1D7874;
 }
 
 .event {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #d1d5de;
 }
 
 .event h3 {
     margin: 0 0 5px 0;
     font-size: 18px;
-    color: #007bff;
+    color: #1D7874;
 }
 
 .event p {
     margin: 0;
     font-size: 14px;
-    color: #555;
+    color: #17183B;
 }
 /* Highlights Section */
 .highlight-section {
@@ -507,7 +517,7 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background: #111;
+    background: #17183B;
 }
 
 .highlight-details {
@@ -525,7 +535,7 @@ header nav ul li a {
 .highlight-details p {
     font-size: 1.2rem;
     margin: 8px 0;
-    color: #ddd;
+    color: #d1d5de;
 }
 
 .highlight-details .team-name {
@@ -535,13 +545,13 @@ header nav ul li a {
 
 .highlight-details .prize-info {
     font-weight: bold;
-    color: #f4c542;
+    color: #F0EC57;
 }
 
 /* Sponsor Section */
 .highlight-sponsors {
     flex: 1;
-    background-color: #00FF00; /* Exact green color */
+    background-color: #1D7874; /* Exact green color */
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -639,7 +649,7 @@ header nav ul li a {
 .event-details p {
     font-size: 1.5rem;
     margin: 10px 0;
-    color: #ddd;
+    color: #d1d5de;
 }
 
 .event-details h2 {
@@ -648,7 +658,7 @@ header nav ul li a {
     font-style: italic;
     font-weight: bold;
     margin-top: 15px;
-    color: #f4c542;
+    color: #F0EC57;
 }
 
 /* Responsive Design */
@@ -749,15 +759,15 @@ header nav ul li a {
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #111;
+    color: #d1d5de;
+    background-color: #17183B;
     overflow-x: hidden;
 }
 
 /* Header Styling */
 header {
-    background: #1c1c1c;
-    color: #fff;
+    background: #17183B;
+    color: #d1d5de;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -791,7 +801,7 @@ header {
 
 .logo span {
     font-size: 14px;
-    color: #ccc;
+    color: #d1d5de;
 }
 
 .nav-links {
@@ -806,13 +816,13 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #d1d5de; /* Highlight color for links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f90;
+    color: #F0EC57; /* Dark color on hover */
 }
 
 .engineered-by {
@@ -834,7 +844,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #d1d5de;
 }
 
 .hero-section .overlay {
@@ -873,7 +883,7 @@ header {
 .hero-section h4 {
     font-size: 30px;
     font-family: 'Cursive';
-    color: #f90;
+    color: #F0EC57;
     margin-top: 15px;
 }
 
@@ -881,7 +891,7 @@ header {
 .star-night-section {
   text-align: center;
   padding: 50px 0;
-  background-color: #1a1a1a;
+  background-color: #17183B;
   color: white;
 }
 
