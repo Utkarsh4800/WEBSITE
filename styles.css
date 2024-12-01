@@ -301,6 +301,11 @@ footer {
     text-align: center;
 }
 
+.image-gallery img {
+    width: 300px;
+    height: auto;
+}
+
 .gallery-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -395,7 +400,8 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #17183B;
+    /* color: #17183B; */
+    color: white;
 }
 
 .event-schedule {
@@ -688,6 +694,9 @@ header nav ul li a {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    background-image: url("./assets/images/main-low-opacity.png");
+    background-size: cover;
+    background-blend-mode: lighten;
     display: flex;
     flex-direction: column;
     justify-content: center;
