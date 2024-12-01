@@ -61,8 +61,8 @@ nav ul li a:hover {
 
 /* Logo */
 .logo img {
-    width: 50px;
-    height: auto;
+    height: 50px;
+    width: auto;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -915,4 +915,9 @@ header {
 .dj-section p {
   font-size: 1.2em;
   margin: 5px 0;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
 }
