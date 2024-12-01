@@ -971,3 +971,222 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.star-night-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.star-night-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.star-night-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.star-night-image {
+    flex: 1;
+    text-align: center;
+}
+
+.star-night-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.star-night-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    position: relative;
+}
+
+.lightbox-content img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-container a img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.venue-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.map-container {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+
+.venue-description {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.venue-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.venue-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.venue-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.contact-info img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.footer-links a {
+    display: block;
+    color: #0066cc;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.social-links ul li {
+    list-style: none;
+}
+
+.social-links ul li a {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.credits img {
+    max-width: 100px;
+}
+.highlights-section {
+    background: #121212; /* Dark background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.highlights-header {
+    margin-bottom: 40px;
+}
+
+.highlights-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.highlights-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.highlight-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.highlight-text {
+    flex: 1 1 40%;
+    min-width: 300px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.highlight-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.highlight-text p {
+    margin: 10px 0;
+}
+
+.highlight-logos {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highlight-logos img {
+    max-width: 100px;
+    height: auto;
+}
