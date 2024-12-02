@@ -12,6 +12,14 @@ body {
 }
 
 /* Header Styles */
+/* .navbar a{
+    color: white;
+} */
+
+.navbar-text {
+    color: white;
+}
+
 header {
     display: flex;
     justify-content: space-between;
