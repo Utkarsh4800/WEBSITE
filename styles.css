@@ -3,9 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #17183B; /* Primary dark color for text */
     background-color: #d1d5de; /* Light background color */
     overflow-x: hidden;
@@ -411,6 +443,16 @@ header nav ul li a {
     /* color: #17183B; */
     color: white;
 }
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1D7874; /* Accent color */
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #17183B;
+}
 
 .event-schedule {
     text-align: center;
@@ -438,11 +480,13 @@ header nav ul li a {
     border: 1px solid #17183B; /* Contrast border */
     color: #F0EC57; /* Bright text */
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .date-selector button:hover {
     background-color: #17183B; /* Invert background on hover */
     color: #d1d5de; /* Light text */
+    transform: scale(1.1);
 }
 
 .schedule {
@@ -617,6 +661,8 @@ header nav ul li a {
     background: url('background-event.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center;
     position: relative;
 }
 
@@ -1052,6 +1098,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-container a img {
@@ -1063,7 +1110,7 @@ header {
 }
 
 .gallery-container a img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .venue-content {

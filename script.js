@@ -90,4 +90,17 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         navbar.classList.remove('active'); // Close menu on link click
     });
 });
+// Intersection Observer for animations
+const sections = document.querySelectorAll('section');
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(section => {
+    observer.observe(section);
+});
