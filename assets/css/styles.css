@@ -313,6 +313,15 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+
+.event-gallery h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #17183B;
+    margin-bottom: 20px;
+}
+
 /* Image Gallery Section */
 .image-gallery-section {
     padding: 4rem 2rem;
@@ -725,7 +734,7 @@ header nav ul li a {
     background: rgba(0, 0, 0, 0.6); /* Dark overlay */
     background-image: url("../images/main-low-opacity.png");
     background-size: cover;
-    background-blend-mode: lighten;
+    background-blend-mode: exclusion;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1087,6 +1096,14 @@ header {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.galleryWrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
 .venue-content {
     display: flex;
     flex-wrap: wrap;
@@ -1102,6 +1119,12 @@ header {
 .venue-description {
     flex: 1 1 45%;
     text-align: left;
+    background: url('../images/venue-info-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .venue-description h2 {
@@ -1120,6 +1143,28 @@ header {
     gap: 20px;
     padding: 20px 0;
     border-top: 1px solid #ccc;
+}
+
+.neonx {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 
+    0 0 20px #1D7874, 
+    0 0 30px #1D7874, 
+    0 0 40px #1D7874, 
+    0 0 50px #1D7874, 
+    0 0 60px #1D7874, 
+    0 0 70px #1D7874;
+    letter-spacing: 1px;
+  }
+
+.neony {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 
+    0 0 20px #17183B, 
+    0 0 30px #17183B, 
+    0 0 40px #17183B, 
+    0 0 50px #17183B, 
+    0 0 61px #17183B, 
+    0 0 70px #17183B;
+    letter-spacing: 1px;
 }
 
 .contact-info img {
