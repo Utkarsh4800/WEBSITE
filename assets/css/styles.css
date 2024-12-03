@@ -435,6 +435,12 @@ header nav ul li a {
 .event-schedule {
     text-align: center;
     padding: 20px;
+    background-image: url("../images/backgrounds/bg1.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .event-schedule h1 {
@@ -1102,6 +1108,15 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
+}
+
+#gallery {
+    background-image: url("../images/backgrounds/bg2.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .venue-content {
