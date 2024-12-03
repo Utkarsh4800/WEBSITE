@@ -91,3 +91,26 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+function showSchedule1() {
+    var x = document.getElementById("schedule1");
+    var y = document.getElementById("schedule2");
+    if (x.classList.contains("hide")) {
+        x.classList.add("show");
+        x.classList.remove("hide");
+
+        y.classList.add("hide");
+        y.classList.remove("show");
+    }
+}
+
+function showSchedule2() {
+    var x = document.getElementById("schedule1");
+    var y = document.getElementById("schedule2");
+    if (y.classList.contains("hide")) {
+        y.classList.add("show");
+        y.classList.remove("hide");
+
+        x.classList.add("hide");
+        x.classList.remove("show");
+    }
+}
