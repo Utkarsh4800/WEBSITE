@@ -1327,3 +1327,70 @@ header {
     max-width: 400px;
     height: auto;
 }
+
+.starnight-section {
+    background-image: url("../images/backgrounds/bg3.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: #121212;  */
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.starnight-header {
+    margin-bottom: 40px;
+}
+
+.starnight-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.starnight-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black;
+}
+
+.starnight-content {
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.starnight-text {
+    flex: 1 1 40%;
+    min-width: 300px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.starnight-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.starnight-text p {
+    margin: 10px 0;
+}
+
+.starnight-logos {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.starnight-logos img {
+    max-width: 400px;
+    height: auto;
+}
