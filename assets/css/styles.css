@@ -127,7 +127,7 @@ nav ul li a:hover {
     color: #17183B;
 }
 
-.contact-info {
+.contact-info, .footer-links, .social-links, .credits {
     margin-left: 20px;
 }
 
