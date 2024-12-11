@@ -420,11 +420,14 @@ header nav ul li a {
 .event-schedule h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .event-schedule p {
     font-size: 18px;
     color: #17183B;
+    font-weight: bold;
 }
 
 .date-selector {
@@ -449,6 +452,7 @@ header nav ul li a {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+    font-weight: bold;
 }
 
 .time-slot {
@@ -460,23 +464,27 @@ header nav ul li a {
     padding: 10px;
     border-left: 5px solid #1D7874;
     margin: 0;
+    font-weight: bold;
     color: #1D7874;
 }
 
 .event {
     padding: 10px;
-    border-bottom: 1px solid #d1d5de;
+    border-bottom: 5px solid #d1d5de;
+    border-bottom-width: thick;
 }
 
 .event h3 {
     margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 25px;
     color: #1D7874;
+    font-weight: bold;
 }
 
 .event p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
     color: #17183B;
 }
 /* Highlights Section */

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genesis 2024 - Annual Cultural and Management Fest</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <script defer src="script.js"></script>
-    <!-- <script defer src="bootstrap.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Genesis 2024-25 </title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -43,8 +42,9 @@
     </header> -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #17183B;">
         <a class="navbar-brand" href="#">
-            <img src="./assets/images/logos/fore.png" width="60" height="auto" alt="">
+            <a href="https://www.fsm.ac.in" class="image-link"><img src="./assets/images/logos/fore.png" width="100" height="auto"  alt="FORE"></a>
           </a>        
+            
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,13 +54,16 @@
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#star-night">Star Night</a>
+              <a class="nav-link" href="#starnight">Star Night</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#highlights">Highlights</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#eventgallery">Event Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#schedule">Schedule</a>
@@ -75,7 +78,7 @@
           <span class="navbar-text">
             Engineered by
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/logos/ft.png" width="60" height="auto" alt="">
+                <a href="https://www.instagram.com/fore_tech/" class="image-link"><img src="./assets/images/logos/ft.png" width="80" height="auto"  alt="FORETech"></a>
               </a>   
           </span>
         </div>
@@ -98,15 +101,20 @@
             <div class="homepage-overlay">
                 <!-- Logo and Event Title -->
                 <div class="event-branding">
-                    <img src="./assets/images/logos/nexus.png" alt="Nexus Logo" class="nexus-logo" />
+                    <p>.</p><br>
+                    <img src="./assets/images/logos/nexus.png" width="110" height="auto" alt="Nexus Logo" class="nexus-logo" />
+                    <br>
                     <p>presents</p>
+                    <br>
                     <img src="./assets/images/logos/genesis_white.png" alt="Genesis Logo" class="genesis-logo" />
                 </div>
                 <!-- Event Details -->
                 <div class="event-details">
-                    <h1>THE ANNUAL CULTURAL AND MANAGEMENT FEST</h1>
+                    <h1 class="mb-4 pb-0 neonx" , class="neony" id="theme">THE ANNUAL CULTURAL AND MANAGEMENT FEST</h1>
+                    <br>
                     <p>13-14 DECEMBER 2024</p>
-                    <h2>Envision the Uncharted</h2>
+                    <br>
+                    <h2 class="mb-4 pb-0 neonx" , class="neony" id="theme">Alchemy of Realms</h2>
                 </div>
             </div>
         </div>
@@ -119,50 +127,54 @@
             document.querySelector('nav').classList.toggle('active');
         }
     </script>
-    <!-- Star Night Section -->
-  <!-- <section id="star-night">
-        <h2>Star Night</h2>
-        <div class="event">
-            <img src="dj-suit-up.jpg" alt="DJ Suit Up">
-            <div class="event-details">
-                <h3>DJ Suit Up</h3>
-                <p>Turning moments into memories, one track at a time.</p>
-                <p><strong>Date:</strong> 13th December 2024 | <strong>Time:</strong> 6:00 PM Onwards</p>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="star-night" class="star-night-section">
-        <h1 class="star-night-title">STAR NIGHT</h1>
-        <div class="star-night-container">
-            <div class="star-night-details">
-                <h2>DJ Suit Up</h2>
-                <p>
-                    Turning moments into memories, one track at a time. DJ Suit Up is ready to elevate GENESIS 2024 to the next level and turn gatherings into epic soundscapes.
-                </p>
-                <p><strong>Date:</strong> 13th December 2024</p>
-                <p><strong>Time:</strong> 6:00 PM onwards</p>
-            </div>
-            <div class="star-night-image">
-                <a href="./assets/images/events/dj-suit-up.png" class="image-link">
-                    <img src="./assets/images/events/dj-suit-up.png" alt="DJ Suit Up" />
-                </a>
-            </div>
-        </div>
-    </section>
+    
     <!-- Lightbox2 CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 
 <!-- Lightbox2 JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<a href="./assets/images/events/dj-suit-up.png" data-lightbox="star-night-gallery" class="image-link">
-    <img src="./assets/images/events/dj-suit-up.png" alt="DJ Suit Up" />
-</a>
+
+<!-- Star Night Section -->
+<section id="starnight" class="starnight-section">
+    <div class="starnight-header">
+        <h1 class="starnight-title">Star Night</h1>
+        <p class="starnight-subtitle">The star events of the night</p>
+    </div>
+    <div class="starnight-content">
+        <div>
+            <a href="#starnight" class="image-link"><img src="./assets/images/star-night/MAAHI.png" width="550" height="auto" alt="Maahi"></a>
+        </div>
+        <div class="starnight-text">
+            <h2>MAAHI</h2>
+            <p>
+                Turning moments into memories, one track at a time. DJ Suit Up is ready to elevate GENESIS 2024 to the next level and turning gatherings into epic soundscapes.
+            </p>
+            <p><strong>13th December 2024</strong></p>
+            <p><strong>06:00 PM onwards</strong></p>
+        </div>
+    </div>
+    <p></p>
+    <div class="starnight-content">
+        <div>
+            <a href="#starnight" class="image-link"><img src="./assets/images/star-night/YOUNG_AND_BROKE.png" width="550" height="auto" alt="young_and_broke"></a>
+        </div>
+        <div class="starnight-text">
+            <h2>YOUNG AND BROKE</h2>
+            <p>
+                Introducing the heartbeat of our sound ##! Get ready to dive into a world of electrifying melodies, soulful rhythms, and lyrics that resonate. Join us on this musical journey at GENESIS 2024, your new favorite band awaits!
+            </p>
+            <p><strong>14th December 2024</strong></p>
+            <p><strong>05:00 PM onwards</strong></p>
+        </div>
+    </div>
+    <p></p>
+</section>
+
 
     
 <section id="highlights" class="highlights-section">
     <div class="highlights-header">
-        <h1 class="highlights-title">HIGHLIGHTS</h1>
+        <h1 class="highlights-title" class="mb-4 pb-0 neonx"  class="neony" id="theme">HIGHLIGHTS</h1>
         <p class="highlights-subtitle">The latest and the greatest events</p>
     </div>
     <div class="highlight-content">
@@ -174,22 +186,51 @@
             <p><strong>By Team Nexus</strong></p>
             <p><strong>Prizes worth ₹ 45,000/-</strong></p>
         </div>
-        <div class="highlight-logos">
-            <img src="./assets/images/logos/fore.png" alt="FORE Logo">
-            <img src="./assets/images/logos/genesis_white.png" alt="Genesis Logo">
-            <img src="./assets/images/logos/nexus.png" alt="Nexus Logo">
+        <div class="gallery-container">
+            <a href="https://unstop.com/o/Uh270WB?lb=e2h6cCt&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Eleganza.png" alt="Eleganza"></a>
+        </div>
+    </div>
+    <div class="highlight-content">
+        <div class="highlight-text">
+            <h2>CORPORATE BUDDHA</h2>
+            <p>
+                An engaging case competition crafted to solve real-world business challenges. This event invites B-School students to showcase their innovative solutions, addressing key industry issues in today’s dynamic business environment.
+            </p>
+            <p><strong>By Team Think Tank</strong></p>
+            <p><strong>Prizes worth ₹ 45,000/-</strong></p>
+        </div>
+        <div class="gallery-container">
+            <a href="https://unstop.com/o/qUWYO1T?lb=kPKizDrF&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Corporate Buddha.png" alt="Corporate Buddha"></a>
+        </div>
+    </div>
+    <div class="highlight-content">
+        <div class="highlight-text">
+            <h2>STEP UP</h2>
+            <p>
+                Street-style dance performances where teams will battle against each other. Each team will perform in an open environment, engaging the audience in a free flowing, competitive format.
+            </p>
+            <p><strong>By Team CDF</strong></p>
+            <p><strong>Prizes worth ₹ 38,000/-</strong></p>
+        </div>
+        <div class="gallery-container">
+            <a href="https://unstop.com/o/FuweXL3?lb=XUekYMrW" class="image-link"><img src="assets/images/events/Step Up.png" alt="Step Up"></a>
+        </div>
+    </div>
+    <div class="highlight-content">
+        <div class="highlight-text">
+            <h2>KURUKSHETRA</h2>
+            <p>
+                Step into Kurukshetra, the national MBA challenge, where creativity, problem-solving, and cross-functional analysis meet real business cases and executive-level pitching.
+            </p>
+            <p><strong>By Team CID</strong></p>
+            <p><strong>Prizes worth ₹ 35,000/-</strong></p>
+        </div>
+        <div class="gallery-container">
+            <a href="https://unstop.com/p/kurukshetra-24-genesis-2024-fore-school-of-management-new-delhi-1222787" class="image-link"><img src="assets/images/events/Kurukshetra.png" alt="Kurukshetra"></a>
         </div>
     </div>
 </section>
 
-    
-            <!-- Sponsor Logos -->
-            <div class="highlight-sponsors">
-                <img src="./assets/images/sponsors/adda.png" alt="Sponsor Logo 1" />
-                <img src="./assets/images/sponsors/sbi.png" alt="Sponsor Logo 2" />
-            </div>
-        </div>
-    </section>
 
     <!-- Image Gallery Section -->
     <!-- <section id="image-gallery" class="image-gallery-section">
@@ -204,15 +245,23 @@
             <a href="./assets/images/gallery/image3.jpg" data-lightbox="gallery-group">
                 <img src="./assets/images/gallery/image3.jpg" alt="Gallery Image 3" />
             </a>
+            Add more images as needed 
         </div>
     </section> -->
 
-    <section id="gallery">
+    <section id="gallery">  
+        <section class="image-gallery-section">
+            <h2 class="gallery-title">IMAGE GALLERY</h2>
+        </section>     
+    <div class="galleryWrapper">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -224,6 +273,16 @@
           <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/gallery/3.JPG" alt="Third slide">
           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/gallery/4.JPG" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/gallery/5.JPG" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/gallery/6.JPG" alt="Sixth slide">
+          </div>
+        </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -234,6 +293,41 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div>
+    </section>
+
+    <section id="eventgallery" class="event-gallery">
+        <section class="image-gallery-section">
+            <h2 class="gallery-title">EVENT GALLERY</h2>
+        </section> 
+        <div class="gallery-container">
+            <a href="https://unstop.com/competitions/technoslides-genesis-2024-fore-school-of-management-new-delhi-1226437" class="image-link"><img src="assets/images/events/Technoslides.png" alt="Technoslides"></a>
+            <a href="https://unstop.com/o/s07JGoI?lb=oFHQ8e1&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Argumentative Indian.png" alt="Argumentative Indian"></a>
+            <a href="https://unstop.com/competitions/backflush-genesis-2024-fore-school-of-management-new-delhi-1215596" class="image-link"><img src="assets/images/events/Backflush.png" alt="Backflush"></a>
+            <a href="https://unstop.com/m/opportunity/1234314/step3" class="image-link"><img src="assets/images/events/Brand Titanic X Embrace The Chaos.png" alt="Brand Titanic X Embrace The Chaos"></a>
+            
+            
+            <!-- Add more images as needed -->
+        </div>
+        <div class="gallery-container">
+            <a href="https://unstop.com/o/X1IZe8H?lb=ZqNlijC&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Guilty as Charged.png" alt="Guilty as Charged"></a>
+            <a href="https://unstop.com/m/opportunity/1213512/step3" class="image-link"><img src="assets/images/events/Jagrukta.png" alt="Jagrukta"></a>
+            <a href="https://unstop.com/competitions/techniti-genesis-2024-fore-school-of-management-new-delhi-1226653" class="image-link"><img src="assets/images/events/Techniti.png" alt="Techniti"></a>
+            <a href="https://unstop.com/o/D6ikOLa?lb=INfulRZp&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Concoct.png" alt="Concoct"></a>
+            <!-- Add more images as needed -->
+        </div><div class="gallery-container">
+            <a href="http://unstop.com/p/market-o-mania-genesis-2024-fore-school-of-management-new-delhi-1234786" class="image-link"><img src="assets/images/events/Market-O-Mania.png" alt="Market-O-Mania"></a>
+            <a href="https://unstop.com/m/opportunity/1213518/step3/rounds" class="image-link"><img src="assets/images/events/Prerna.png" alt="Prerna"></a>
+            <a href="https://unstop.com/p/promptverse-genesis-2024-fore-school-of-management-new-delhi-1221474" class="image-link"><img src="assets/images/events/Prompt-Verse.png" alt="Prompt-Verse"></a>
+            <a href="https://unstop.com/quiz/sampatti-genesis-2024-fore-school-of-management-new-delhi-1235603" class="image-link"><img src="assets/images/events/Sampatti.png" alt="Sampatti"></a>
+              
+            <!-- Add more images as needed -->
+            </div><div class="gallery-container">  
+            <a href="https://unstop.com/o/MSBWkJK?lb=WRxZDF1&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/The Amazing Race.png" alt="The Amazing Race"></a>
+            <a href="https://unstop.com/o/XFLbGNv?lb=Hdb4amj&utm_medium=Share&utm_source=shortUrl" class="image-link"><img src="assets/images/events/Vyamaham.png" alt="Vyamaham"></a>
+            <a href="https://unstop.com/p/raffle-70-genesis-2024-fore-school-of-management-new-delhi-1216458" class="image-link"><img src="./assets/images/events/Raffle 7.0.png" alt="Raffle 7.0"></a>
+            <a href="https://unstop.com/competitions/stratagem-2024-fore-school-of-management-new-delhi-1212104" class="image-link"><img src="./assets/images/events/Stratagem.png" alt="Stratagem"></a>
+        </div>
     </section>
 
     <!-- Schedule Section -->
@@ -241,45 +335,132 @@
         <h1>EVENT SCHEDULE</h1>
         <p>The timeline of fun</p>
         <div class="date-selector">
-            <button>1 Dec 2023</button>
-            <button>2 Dec 2023</button>
+            <button onclick="showSchedule1()" id="day1button">13 Dec 2024</button>
+            <button onclick="showSchedule2()" id="day2button">14 Dec 2024</button>
         </div>
-        <div class="schedule">
+        <!-- Schedule 1 -->
+        <div class="schedule" id="schedule1">
             <div class="time-slot">
                 <h2>11:30 AM</h2>
                 <div class="event">
-                    <h3>TechNiti</h3>
-                    <p>An infographic event to showcase graphic visual representations to convey ideas.<br><strong>Team:</strong> FORETech</p>
+                    <h3><strong>TechNiti</strong></h3>
+                    <p><strong> infographic event to showcase graphic visual representations to convey ideas.<br><strong>Team:</strong> Team FORETech</strong></p>
                 </div>
-                <div class="event">
+                <div class="event"><strong>
                     <h3>Kurukshetra</h3>
-                    <p>Teams come up with ideas of a product to be launched in the market in the given criteria.<br><strong>Team:</strong> CID</p>
+                    <p>Teams come up with ideas of a product to be launched in the market in the given criteria.<br><strong>Team:</strong> Team CID</p>
                 </div>
                 <div class="event">
                     <h3>Jagrukta</h3>
-                    <p>A Nukkad Natak competition where each team needs to perform on a social cause.<br><strong>Team:</strong> ANTAR</p>
+                    <p>A Nukkad Natak competition where each team needs to perform on a social cause.<br><strong>Team:</strong> Team ANTAR</p>
+                </div>
+                <div class="event">
+                    <h3>Raffle 7.0</h3>
+                    <p>Test your knowledge of global trade in Raffle, featuring exciting activities that connect academic concepts to real-world export and import scenarios.<br><strong>Team:</strong> Team IBF</p>
                 </div>
             </div>
             <div class="time-slot">
                 <h2>12:00 PM</h2>
                 <div class="event">
                     <h3>Prerna</h3>
-                    <p>CSR case study event which begins with a quiz followed by a presentation.<br><strong>Team:</strong> ANTAR & CSD</p>
+                    <p>CSR case study event which begins with a quiz followed by a presentation.<br><strong>Team:</strong> Team ANTAR & Team CSD</p>
                 </div>
                 <div class="event">
                     <h3>Vyamaham</h3>
-                    <p>HR-based case study competition.<br><strong>Team:</strong> SIG-HR</p>
+                    <p>HR-based case study competition.<br><strong>Team:</strong> Team SIG-HR</p>
                 </div>
                 <div class="event">
                     <h3>Argumentative Indian</h3>
-                    <p>The person has to speak on the given topic for 180 seconds and judged on that.<br><strong>Team:</strong> FOREword & SIG-Sankalp</p>
+                    <p>The person has to speak on the given topic for 180 seconds and judged on that.<br><strong>Team:</strong> Team FOREword and Team SIG-Sankalp</p>
+                </div>
+                <div class="event">
+                    <h3>Strategem</h3>
+                    <p>Unleash your PR skills in this event, where you'll craft bold social media content to reshape brands facing tough PR battles.<br><strong>Team:</strong> Team FORE Connect</p>
+                </div>
+            </div>
+            <div class="time-slot">
+                <h2>02:00 PM</h2>
+                <div class="event">
+                    <h3>Eleganza</h3>
+                    <p>Unleashing creativity and style, our college fashion show celebrates the bold, the beautiful, and the boundary-pushing trends of tomorrow.<br><strong>Team:</strong> Team Nexus</p>
                 </div>
                 <div class="event">
                     <h3>The Amazing Race</h3>
-                    <p>Treasure Hunt event that allows the participants to explore the city of Delhi.<br><strong>Team:</strong> Think Tank</p>
+                    <p>Join an exciting adventure where you’ll solve engaging puzzles and riddles in a real-time treasure hunt designed to sharpen your problem-solving abilities and strategic mindset.<br><strong>Team:</strong> Team Think Tank</p>
                 </div>
             </div>
+            <div class="time-slot">
+                <h2>03:00 PM</h2>
+                <div class="event">
+                    <h3>Inaugural Ceremony</h3>
+                </div>
+            </div>
+            <div class="time-slot">
+                <h2>06:00 PM</h2>
+                <div class="event">
+                    <h3>DJ Evening</h3>
+                </div>
+            </strong></div>
         </div>
+
+        <!-- schedule2 -->
+        <div class="schedule hide" id="schedule2">
+            <div class="time-slot"><strong>
+                <h2>09:30 AM</h2>
+                <div class="event">
+                    <h3>Technoslides</h3>
+                    <p>Case study competition that focuses on the IT technologies.<br><strong>Team:</strong> Team FORETech</p>
+                </div>
+                <div class="event">
+                    <h3>Step Up</h3>
+                    <p>Street-style dance performances where teams will battle against each other. Each team will perform in an open environment, engaging the audience in a free-flowing, competitive format.<br><strong>Team:</strong> Team CDF</p>
+                </div>
+            </div>
+            <div class="time-slot">
+                <h2>10:00 AM</h2>
+                <div class="event">
+                    <h3>Concoct</h3>
+                    <p>B-school Competition for budding entrepreneurs to showcase their business ideas.<br><strong>Team:</strong> Team IIC</p>
+                </div>
+                <div class="event">
+                    <h3>Brand Titanic X Embrace the Chaos</h3>
+                    <p>Includes a quiz, a rebranding task and final round on crisis management.<br><strong>Team:</strong> Team Sigma and Team SIG-Unstop</p>
+                </div>
+                <div class="event">
+                    <h3>Blackflush</h3>
+                    <p>Embrace the challenge of operational excellence and strategic foresight at Backflush, where you’ll reimagine processes and streamline execution.<br><strong>Team:</strong> Team FOSTRA</p>
+                </div>
+            </div>
+            <div class="time-slot">
+                <h2>11:00 AM</h2>
+                <div class="event">
+                    <h3>Market-O-Mania</h3>
+                    <p>Focuses on important aspects of being a passionate and knowledgeable manager.<br><strong>Team:</strong> Team SIG-IP</p>
+                </div>
+                <div class="event">
+                    <h3>Corporate Buddha</h3>
+                    <p>An engaging case competition crafted to solve real-world business challenges. This event invites B-School students to showcase their innovative solutions, addressing key industry issues in today’s dynamic business environment.<br><strong>Team:</strong> Team Think Tank</p>
+                </div>
+                <div class="event">
+                    <h3>PromptVerse</h3>
+                    <p>Dive into the world of AI with PromptVerse, where you'll explore crafting effective prompts through a fun treasure hunt and creative challenges.<br><strong>Team:</strong> Team SIGnalytics</p>
+                </div>
+                <div class="event">
+                    <h3>Sampatti</h3>
+                    <p>Stock market showdown where college students use their analytical skills to build winning portfolios amidst market buzz and breaking new.<br><strong>Team:</strong> Team FEFF</p>
+                </div>
+                <div class="event">
+                    <h3>Guilty As Charged</h3>
+                    <p>Step into the courtroom of chaos—will you defend the devil in a world of market turmoil and public scandals?<br><strong>Team:</strong> Team PEC</p>
+                </div>
+            </div>
+            <div class="time-slot">
+                <h2>05:00 PM</h2>
+                <div class="event">
+                    <h3>Star Evening</h3>
+                </div>
+            </div>
+        </strong></div>
     </section>
 
     <!-- Sponsors Section -->
@@ -287,18 +468,17 @@
     <h2 class="sponsors-title">Sponsors</h2>
     <p class="sponsors-subtitle">Special thanks to all of you</p>
     <div class="sponsors-grid">
-        <div class="sponsor-item"><img src="./assets/images/sponsors/sbi.png" alt="SBI"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/coffeewaala.png" alt="Coffee Waala"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/lic.png" alt="LIC"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/adda.png" alt="Adda52"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/hdfc.png" alt="HDFC Credila"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/jiosaavn.png" alt="JioSaavn"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/hell.png" alt="Hell Energy Drink"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/pvr.png" alt="PVR Inox"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/gamx.png" alt="Gamx Technologies"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/quince.png" alt="Quince Entertainment"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/brownsugar.png" alt="Brown Sugar"></div>
-        <div class="sponsor-item"><img src="./assets/images/sponsors/grog.png" alt="GRO Events"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Adda52-Logo.png" alt="Adda52"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Bad_Fella.png" alt="Bad_Fella"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Bank-of-Baroda-logo.png" alt="Bank_Of_Baroda"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Grano_Pizza.png" alt="Grano_Pizza"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Jio_Saavn-Logo.png" alt="Jio_Saavan"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/LIC_Logo.png" alt="LIC"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Medusa.png" alt="Medusa"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Namaste_Asia.png" alt="Namaste_Asia"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Niyo.png" alt="Niyo"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/TheAestheticShop.png" alt="The_Aesthetic_Shop"></div>
+        <div class="sponsor-item"><img src="./assets/images/sponsors/Vibin_Logo.png" alt="Vibin"></div>
     </div>
 </section>
 
@@ -306,26 +486,36 @@
 <section id="event-venue" class="event-venue-section">
     <h1 class="venue-title">EVENT VENUE</h1>
     <div class="venue-content">
-        <div class="map-container">
+        <div class="map-container"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0952012582784!2d77.18220877575389!3d28.536858075717088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dfac0000001%3A0x7c48729b0de4bd97!2sFORE%20School%20of%20Management!5e0!3m2!1sen!2sin!4v1733417273368!5m2!1sen!2sin" 
+            width="90%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <div class="venue-description">
+           <!--<h2>FORE School of Management, New Delhi</h2>
+            <p>
+                FORE is one of the Top PGDM Colleges in Delhi offering MBA admission. It is a top PGDM institute that provides 2-year PGDM courses in Delhi NCR.
+            </p>--> 
+            <h2>FORE School of Management, New Delhi</h2>
+            <p>FORE is one of the Top PGDM Colleges in Delhi offering MBA admission. It is a top PGDM institute that provides 2-year PGDM courses in Delhi NCR.</p>
+            
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1758.0415174174275!2d77.16524067800893!3d28.55296460126915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d5ea5abdb9%3A0xabbe92e283f401b8!2sFORE%20School%20of%20Management!5e0!3m2!1sen!2sin!4v1234567890" 
                 width="100%" 
-                height="300" 
+                height="150" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy">
             </iframe>
         </div>
-        <div class="venue-description">
-            <h2>FORE School of Management, New Delhi</h2>
-            <p>
-                FORE is one of the Top PGDM Colleges in Delhi offering MBA admission. It is a top PGDM institute that provides 2-year PGDM courses in Delhi NCR.
-            </p>
-        </div>
     </div>
     <footer class="venue-footer">
         <div class="contact-info">
-            <img src="./assets/images/logos/fore.png" />
+            <a href="https://www.fsm.ac.in" class="image-link"><img src="./assets/images/logos/fore.png" alt="FORE"></a>
             <address>
                 B-18, Adhitam Kendra <br />
                 Qutab Institutional Area <br />
@@ -334,27 +524,33 @@
             </address>
         </div>
         <div class="footer-links">
-            <a href="#">Highlights</a>
-            <a href="#">Browse all events</a>
-            <a href="#">Event Schedule</a>
-            <a href="#">Institute Website</a>
-            <a href="#">Click here for any queries</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#eventgallery">Browse all events</a>
+            <a href="#schedule">Event Schedule</a>
+            <a href="https://www.fsm.ac.in">Institute Website</a>
+            <a class="query-button" href="mailto:nexus@fsm.ac.in?subject=Enquiry | Genesis 2024-2025&body=Please write your query here!!">Click here for any queries</a>
         </div>
         <div class="social-links">
-            <p>Team Nexus</p>
-            <p>Bhavya Dua: +91 9811139319</p>
-            <p>Ishita Kumar: +91 8586917502</p>
-            <ul>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <div> 
+               <ul><h5>Team Nexus</h5></ul> 
+               <ul>Bhavya Dua: +91 9811139319</ul> 
+                <ul><p>Ishita Kumar: +91 8586917502</p></ul>
+            </div>
+           
+            <ul class="social-media-icons">
+                <li><a href="https://twitter.com/fore_delhi"><i class="fab fa-twitter"></i></a></li><br>
+                <li><a href="https://www.facebook.com/foreschoolofmanagementdelhi"><i class="fab fa-facebook"></i></a></li><br>
+                <li><a href="https://www.instagram.com/fore_delhi/"><i class="fab fa-instagram"></i></a></li><br>
+                <li><a href="https://www.linkedin.com/school/fore-school-of-management-new-delhi/mycompany/"><i class="fab fa-linkedin"></i></a></li><br>
             </ul>
         </div>
         <div class="credits">
             <p>DESIGNED BY</p>
-            <p><img src="./assets/images/logos/ft.png" alt="FORE Technical Division Logo" /></p>
-        </div>
+            <p>FORE Technical Division</p>
+            <p>
+                <a href="https://www.instagram.com/fore_tech/" class="image-link"><img src="./assets/images/logos/ft.png" alt="FORETech"></a>
+            </p>
+             </div>
     </footer>
 </section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
