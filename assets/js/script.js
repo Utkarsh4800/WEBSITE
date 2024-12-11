@@ -94,23 +94,41 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 function showSchedule1() {
     var x = document.getElementById("schedule1");
     var y = document.getElementById("schedule2");
+    var b1 = document.getElementById("day1button");
+    var b2 = document.getElementById("day2button");
+
     if (x.classList.contains("hide")) {
         x.classList.add("show");
         x.classList.remove("hide");
 
         y.classList.add("hide");
         y.classList.remove("show");
+
+        b1.classList.add("button-color-selected");
+        b1.classList.remove("button-color-original");
+
+        b2.classList.add("button-color-original");
+        b2.classList.remove("button-color-selected");
     }
 }
 
 function showSchedule2() {
     var x = document.getElementById("schedule1");
     var y = document.getElementById("schedule2");
+    var b1 = document.getElementById("day1button");
+    var b2 = document.getElementById("day2button");
+
     if (y.classList.contains("hide")) {
         y.classList.add("show");
         y.classList.remove("hide");
 
         x.classList.add("hide");
         x.classList.remove("show");
+
+        b2.classList.add("button-color-selected");
+        b2.classList.remove("button-color-original");
+
+        b1.classList.add("button-color-original");
+        b1.classList.remove("button-color-selected");
     }
 }

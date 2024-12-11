@@ -132,12 +132,13 @@ nav ul li a:hover {
 }
 
 .venue-title {
+    padding: 1rem 2rem;
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #1D7874; /* Accent text */
+    color: black; /* Accent text */
 }
 
 /* Map and details container */
@@ -152,6 +153,18 @@ nav ul li a:hover {
 .venue-map {
     flex: 1;
 }
+
+.map-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; 
+}
+iframe {
+    display: block; /* Ensures the iframe respects centering rules */
+}
+
 
 .venue-details {
     flex: 1;
@@ -259,7 +272,7 @@ footer p {
 }
 /* Sponsors Section */
 .sponsors-section {
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     background-color: #d1d5de; /* Accent background */
     text-align: center;
     color: #F0EC57; /* Highlight text */
@@ -270,7 +283,7 @@ footer p {
     font-weight: bold;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #F0EC57; /* Bright highlight */
+    color: black; /* Bright highlight */
 }
 
 .sponsors-subtitle {
@@ -324,7 +337,7 @@ footer p {
 
 /* Image Gallery Section */
 .image-gallery-section {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
     background-color: #d1d5de;
     text-align: center;
 }
@@ -490,6 +503,7 @@ header nav ul li a {
 }
 
 .event-schedule h1 {
+    font-weight: bold;
     font-size: 36px;
     margin-bottom: 10px;
 }
@@ -515,6 +529,14 @@ header nav ul li a {
 .date-selector button:hover {
     background-color: #17183B; /* Invert background on hover */
     color: #d1d5de; /* Light text */
+}
+
+.button-color-original {
+    background-color: #1D7874 !important;
+}
+
+.button-color-selected {
+    background-color: #000000 !important;
 }
 
 .schedule {
@@ -1020,6 +1042,11 @@ header {
     width: 80px;
     height: auto;
 }
+
+.social-media-icons li a i {
+    color: white;
+}
+
 .star-night-section {
     background: url('../images/backgrounds/star-night-bg.jpg') no-repeat center center/cover;
     color: #fff;
@@ -1185,7 +1212,6 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .venue-description h2 {
@@ -1240,12 +1266,13 @@ header {
 
 .footer-links a {
     display: block;
-    color: #0066cc;
+    color: #a6c9eb;
     text-decoration: none;
     margin-bottom: 8px;
 }
 
 .footer-links a:hover {
+    color: #4c9beb;
     text-decoration: underline;
 }
 
