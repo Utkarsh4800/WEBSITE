@@ -684,6 +684,10 @@ header nav ul li a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .starnight-content img {
+        width: 80%;
+    }
+
     .highlight-content-container {
         flex-direction: column;
         text-align: center;
@@ -1398,6 +1402,7 @@ header {
     min-width: 300px;
     text-align: left;
     font-size: 1.2rem;
+    margin-left: 40px;
 }
 
 .starnight-text h2 {
